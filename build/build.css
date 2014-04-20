@@ -1,0 +1,14 @@
+.noticon {
+  color: white;
+  background: #ff4136;
+  position: absolute;
+  right: 12px;
+  top: 13px;
+  height: 16px;
+  width: 16px;
+  font:bold 10px Arial, sans-serif;
+  line-height: 16px;
+  border-radius: 50%;
+}
+
+
