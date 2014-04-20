@@ -17,20 +17,33 @@
         background: #78b5ff;
         border: 1px solid white;
       }
+      #email {
+        height: 40px;
+        line-height: 40px;
+        width: 120px;
+        text-align: center;
+        margin: 60px auto;
+        font-size: 16px;
+        background-color: #111;
+        color: #fff;
+        font-family: "Helvetica Neue", sans-serif;
+        position: relative;
+      }
     </style>
   </head>
   <body>
-    <script src="../build/build.js"></script>
+    <script src="build/build.js"></script>
+    <div id="email">Email</div>
     <script>
       var Noticon = require('noticon');
-      var icon = new Noticon;
+      var el = document.getElementById('email');
+      var icon = new Noticon(el);
 
       var n = 0;
       function next() {
         icon.update(n++);
         setTimeout(next, Math.random() * 500);
       }
-      
       setTimeout(next, 200);
 
     </script>
