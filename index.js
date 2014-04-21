@@ -23,8 +23,8 @@ function Noticon(el, clz) {
   el.style.position = 'relative';
   var div = this.el = document.createElement('div');
   div.className = 'noticon ' + (clz || '');
-  div.style.display = 'none';
   el.appendChild(div);
+  this.update(0);
 }
 
 Noticon.prototype.update = function (n) {

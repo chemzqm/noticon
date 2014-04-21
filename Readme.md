@@ -21,6 +21,8 @@
   Update the number to `n`, this will automatically
   draw the bubble and replace the favicon.
 
+  hide if n is `0`.
+
 # License
 
   MIT
